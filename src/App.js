@@ -2,16 +2,11 @@ import './App.css';
 import 'antd/dist/antd.css';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
-import Navbar from './components/Navbar';
 import { Route, NavLink } from 'react-router-dom';
 import Profile from './components/Profile';
 import Messages from './components/Messages';
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
-/*import Header from './components/Header';
-
-import Profile from './components/Profile';
-import { Button } from "antd";*/
 
 function App() {
   return (
@@ -19,8 +14,8 @@ function App() {
     <Layout>
     <Header className="header">
       <div className="logo" />
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-      <Menu.Item key="1">nav 1</Menu.Item>
+      <Menu theme="dark" mode="horizontal" >
+      <Menu.Item key="1">aia</Menu.Item>
       </Menu>
     </Header>
     <Layout>
@@ -52,11 +47,7 @@ function App() {
         </Menu>
       </Sider>
       <Layout style={{ padding: '0 24px 24px' }}>
-        <Breadcrumb style={{ margin: '16px 0' }}>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
+        
         <Content
           className="site-layout-background"
           style={{
@@ -73,14 +64,6 @@ function App() {
     
   </Layout>
   
-
-    /*<div className="App">
-      <Header />
-      <Navbar />
-      <Profile/>
-      <div><Button type='primary'>ok</Button></div>
-      
-    </div>*/
   )
 }
 
